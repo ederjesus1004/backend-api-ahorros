@@ -25,7 +25,7 @@ public final class AhorristaMapper {
     public static AhorristaResponse toResponse(Ahorrista ahorrista){
         return AhorristaResponse.builder()
         .id(ahorrista.getId())
-        .descripcion( " (" + ahorrista.getDni() + ahorrista.getNombres() + ")")
+        .descripcion( " (" + ahorrista.getDni() + " " +  ahorrista.getNombres() + ")")
         .email(ahorrista.getEmail())
         .celular(ahorrista.getCelular())
         .fechaRegistro(ahorrista.getFechaRegistro())

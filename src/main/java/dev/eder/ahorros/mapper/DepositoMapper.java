@@ -22,6 +22,7 @@ public final class DepositoMapper {
         return DepositoResponse.builder()
         .id(deposito.getId())
         .ahorristaId(deposito.getAhorrista().getId())
+        .ahorrista(deposito.getAhorrista().getNombres())
         .capital(deposito.getCapital())
         .plazoMeses(deposito.getPlazoMeses())
         .tasaMensual(deposito.getTasaMensual())

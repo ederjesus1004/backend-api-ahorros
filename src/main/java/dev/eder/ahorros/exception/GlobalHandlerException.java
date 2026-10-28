@@ -46,6 +46,7 @@ public class GlobalHandlerException {
     //500
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponse> manejarGeneral(Exception ex){
+        log.error("Error inesperado", ex);
         return armarRespuesta(HttpStatus.INTERNAL_SERVER_ERROR, "Ocurrio un error inesperado", Map.of());
     }
 

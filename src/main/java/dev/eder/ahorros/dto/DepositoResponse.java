@@ -10,6 +10,7 @@ public record DepositoResponse(
 
     Long id,
     Long ahorristaId,
+    String ahorrista,
     BigDecimal capital,
     Integer plazoMeses,
     BigDecimal tasaMensual,
